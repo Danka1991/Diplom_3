@@ -12,19 +12,19 @@ class MainPageLocators:
 
     MODAL = (By.XPATH, "//section[contains(@class, 'Modal_modal_opened__')]")
 
-    FLUR_BUN = (By.XPATH, "(//a/p[contains(@class, 'BurgerIngredient_ingredient')])[1]")
+    FLUR_BUN = (By.XPATH, "//p[contains(text(), 'Флюоресцентная булка R2-D3')]")
 
-    LUM_FILLET_TETRA = (By.XPATH, "(//a[contains(@class, 'BurgerIngredient_ingredient')])[10]")
+    LUM_FILLET_TETRA = (By.XPATH, "//a[contains(@class, 'BurgerIngredient_ingredient__')][.//p[text()='Филе Люминесцентного тетраодонтимформа']]")
     
     INGR_COUNTER = (By.XPATH, ".//p[contains(@class, 'counter_counter__num__')]")
 
-    FIRST_SAUCE = (By.XPATH, "(//div[contains(@class, 'BurgerIngredient_ingredient')])[3]")
+    FIRST_SAUCE = (By.XPATH, "//p[contains(text(), 'Соус Spicy-X')]")
 
     MODAL_CLOSE_BUTTON = (By.XPATH, "//button[contains(@class, 'Modal_modal__close')]")
 
     BASKET = (By.XPATH, "(//section[contains(@class, 'BurgerConstructor_basket__')])")
 
-    MAKE_ORDER_BTN = (By.XPATH, "//div[contains(@class, 'BurgerConstructor_basket__container__')]/button[text()='Оформить заказ']")
+    MAKE_ORDER_BTN = (By.XPATH, "//button[text()='Оформить заказ']")
 
     ORDER_ID = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title_shadow__')]")
 
